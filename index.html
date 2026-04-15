@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <!--style-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i>Unit Converter</i></h1>
+        <div class="converter">
+            <label for="type">Select Unit Types:</label>
+            <select name="type" id="type">
+                <option value="length">Length</option>
+                <option value="width">Width</option>
+                <option value="tempertature">Tempertature</option>
+            </select>
+            <input type="number" id="inputValue" placeholder="Enter Value">
+            <select name="fromUnit" id="fromUnit">
+                <option value="mile"></option>
+                <option value="willimeter">millimeter</option>
+                <option value="tempertature">Temperature</option>
+            </select>
+            <select type="toUnit"id="toUnit">
+                <option value="mile">mile</option>
+            </select>
+            
 
+            <button id="convertBtn" style="background-color: #7c3aed;">Convert</button>
+                <h2 id="result" style="color: green;"><i>Result</i></h2>
+        
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
